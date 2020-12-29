@@ -1,0 +1,57 @@
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr 1fr 3fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+		" header header "
+    " amount amount "
+    " price price "
+    "footer1 footer2 ";
+}
+
+.container div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.header {
+  grid-area: header;
+
+  border:3px solid;
+  border-radius: 20px;
+}
+
+.amount {
+  grid-area: amount;
+}
+
+.price {
+  grid-area: price;
+}
+
+.footer1 {
+  grid-area: footer1;
+}
+
+.footer2 {
+  grid-area: footer2;
+}
+
+#payment {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+    " header "
+    " footer1 ";
+}

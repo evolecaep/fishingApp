@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 5fr 1fr 1fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+		" header header "
+		" mainA mainB "
+		" subA subB "
+		" footer footer";
+}
+
+.container div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+
+    border:3px solid;
+    border-radius: 20px;
+
+}
+
+
+#no_border{
+  border:0px;
+}
+
+.logo {
+  grid-area: header;
+}
+
+.mainA {
+  grid-area: mainA;
+}
+
+.mainB {
+  grid-area: mainB;
+}
+
+.subA {
+  grid-area: subA;
+}
+
+.subB {
+  grid-area: subB;
+}
+
+.login {
+  grid-area: footer;
+}

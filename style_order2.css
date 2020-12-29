@@ -1,0 +1,133 @@
+#grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr 2fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+		" header header "
+    " reply reply "
+		" mainA mainA "
+    " mainB mainB "
+		" footer1 footer2";
+}
+
+#grid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 4fr 4fr 4fr 6fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+    " header header "
+    " reply reply "
+    " mainA mainA "
+    " mainB mainB "
+    " mainC mainC "
+    " footer1 footer2";
+}
+
+#grid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 3fr 4fr 4fr 4fr 6fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+    " header header "
+    " reply reply "
+    " mainA mainA "
+    " mainB mainB "
+    " mainC mainC "
+    " footer1 footer2";
+}
+
+#grid4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 7fr 8fr 6fr;
+  align-items: stretch;
+  height: 98vh;
+  gap: 5px;
+  grid-template-areas:
+    " header header "
+    " reply reply "
+    " mainD mainD "
+    " footer1 footer2";
+}
+
+.container div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+  grid-area: header;
+}
+
+.reply {
+  grid-area: reply;
+  font-size: 1.5em;
+
+  border:3px solid;
+  border-radius: 20px;
+}
+.mainA {
+  grid-area: mainA;
+  background-color:#dbb13b;
+}
+
+.mainB {
+  grid-area: mainB;
+  background-color:#56bda2;
+}
+
+.mainC {
+  grid-area: mainC;
+  background-color:#6342b6;
+}
+
+.mainD {
+  grid-area: mainD;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer1 {
+  grid-area: footer1;
+}
+
+.footer2 {
+  grid-area: footer2;
+}
+
+select {
+  width: 95vw;
+  height: 8vh;
+  padding: 6px 10px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  border: 1px solid #bababa;
+  background-color: #fff;
+  border-radius: 0;
+  appearance: none;
+  outline: none;
+}
+
+input[type=text]{
+  padding: 6px 10px;
+  font-size: 1.5rem;
+  border: 1px solid #bababa;
+  background-color: #fff;
+  width: 80vw;
+  height: 5vh;
+
+}
